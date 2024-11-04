@@ -3,55 +3,35 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <style>
-            * {
-                box-sizing: border-box;
-                text-decoration: none;
-                list-style: none;
-                color: rgb(20, 10, 10);
-            }
-            html,
-            body {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-            }
-            body {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                background-color: rgb(255, 246, 207);
-            }
-            .title {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border-radius: 20px;
-                background-color: rgb(255, 214, 32);
-                padding: 20px 50px;
-            }
-            .title > h1,
-            .title > h3 {
-                color: rgb(67, 81, 94);
-            }
-            .lore {
-                font-size: 20px;
-                color: rgba(0, 0, 0, 0.5);
-                margin: 20px 0px;
-                padding: 20px 40px;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-                border-top: 1px solid rgba(0, 0, 0, 0.2);
-            }
-        </style>
+        <title>Dep's H.P.</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="title">
-            <h1>정재형 의 깃허브 테스트 페이지</h1>
-            <h3>202200895</h3>
+        <div class="backslide">
+            <!-- <div class="imgslide"><img src="#" alt="슬라이드 이미지" /></div> -->
         </div>
-        <div class="lore">*추후 업데이트로 수정 예정입니다*</div>
+        <header class="header">
+            <div class="logo">
+                <a href="#"><img src="#" alt="로고 이미지" /></a>
+            </div>
+            <div class="num"><span>202200895</span><span>정재형</span></div>
+        </header>
+        <main class="main">
+            <span class="slide"> 메인 이미지 슬라이드</span>
+            <div class="menu">
+                <a href="#"><span>메뉴1</span></a>
+                <a href="#"><span>메뉴2</span></a>
+                <a href="#"><span>메뉴3</span></a>
+                <a href="#"><span>메뉴4</span></a>
+                <a href="#"><span>메뉴5</span></a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="logo">
+                <a href="#"><img src="#" alt="로고 이미지" /></a>
+            </div>
+        </footer>
+        <script src="jquery.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
