@@ -87,11 +87,28 @@ body {
 }
 
 .nav-menu li a {
+    height: 60px;
     font-size: 40px;
     font-weight: bolder;
     color: #a4a4a4;
     transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
 }
+.nav-menu li a span,
+.nav-menu li a i {
+    font-size: 16px;
+    display: hidden;
+    opacity: 0;
+    margin-left: 30px;
+    transition: 0.3s ease-in-out;
+}
+.nav-menu li:hover a span,
+.nav-menu li:hover a i {
+    display: block;
+    opacity: 1;
+}
+
 .nav-menu li.active a {
     color: #6d6d6d;
     transform: translateX(30px);
