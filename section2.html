@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dep_Dev</title>
+        <link rel="stylesheet" href="sections.css" />
+        <link rel="preconnect" href="index.html" />
+    </head>
+    <body>
+        <section class="section">
+            <header class="header">CSS</header>
+            <article class="article">
+                <br />
+                <h2>CSS란 무엇인가?</h2>
+                <br />
+                <p>
+                    CSS(Cascading Style Sheets)는 HTML로 작성된 웹 문서의 스타일(디자인)을 지정하는 언어입니다. CSS를
+                    사용하면 웹 페이지의 레이아웃, 색상, 글꼴, 간격 등 시각적 요소를 제어할 수 있습니다. CSS는 HTML
+                    콘텐츠와 스타일을 분리함으로써 웹 페이지의 유지보수를 쉽게 하고, 사용자 경험을 향상시키는 데 중요한
+                    역할을 합니다.
+                </p>
+                <br />
+                <h3>CSS의 주요 개념</h3>
+                <br />
+                <h4>1. 선택자(Selector)</h4>
+                <br />
+                <p>
+                    선택자는 CSS에서 스타일을 적용할 HTML 요소를 지정합니다. 기본적으로 선택자는 아래와 같은 종류가
+                    있습니다:
+                </p>
+                <ul>
+                    <br />
+                    <li><strong>태그 선택자</strong>: 특정 태그를 선택합니다. <code>p { color: red; }</code></li>
+                    <br />
+                    <li>
+                        <strong>클래스 선택자</strong>: 클래스 이름으로 요소를 선택합니다.
+                        <code>.box { border: 1px solid black; }</code>
+                    </li>
+                    <br />
+                    <li>
+                        <strong>ID 선택자</strong>: ID 이름으로 요소를 선택합니다.
+                        <code>#header { background-color: blue; }</code>
+                    </li>
+                    <br />
+                    <li>
+                        <strong>그룹 선택자</strong>: 여러 선택자에 동일한 스타일을 적용합니다.
+                        <code>h1, h2, h3 { font-weight: bold; }</code>
+                    </li>
+                    <br />
+                </ul>
+                <br />
+                <h4>2. 속성(Property)와 값(Value)</h4>
+                <br />
+                <p>
+                    CSS는 속성과 값의 쌍으로 구성됩니다. 속성은 스타일을 변경하려는 요소의 특성을, 값은 그 속성에 적용할
+                    구체적인 스타일을 나타냅니다.
+                </p>
+                <pre><code>h1 {
+                  color: red; /* 글자 색상을 빨간색으로 */
+                  font-size: 24px; /* 글자 크기를 24px로 */
+                }</code></pre>
+                <br />
+                <h3>CSS 적용 방법</h3>
+                <br />
+                <p>CSS는 HTML 문서에 세 가지 방법으로 적용할 수 있습니다:</p>
+                <br />
+                <h4>1. 인라인 스타일</h4>
+                <br />
+                <p>HTML 요소의 <code>style</code> 속성을 사용하여 CSS를 적용합니다.</p>
+                <pre><code>&lt;p style="color: blue; text-align: center;"&gt;이 문장은 파란색으로 가운데 정렬됩니다.&lt;/p&gt;</code></pre>
+                <br />
+                <h4>2. 내부 스타일 시트</h4>
+                <br />
+                <p>
+                    HTML 문서의 <code>&lt;head&gt;</code> 태그 안에 <code>&lt;style&gt;</code> 태그를 사용하여 CSS를
+                    정의합니다.
+                </p>
+                <pre><code>&lt;style&gt;
+                  p {
+                    color: green;
+                    font-size: 18px;
+                  }
+                &lt;/style&gt;</code></pre>
+                <br />
+                <h4>3. 외부 스타일 시트</h4>
+                <br />
+                <p>별도의 .css 파일에 CSS 코드를 작성하고 HTML 문서에서 <code>&lt;link&gt;</code> 태그로 연결합니다.</p>
+                <pre><code>/* styles.css */
+                p {
+                  color: black;
+                  line-height: 1.6;
+                }</code></pre>
+                <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+                <br />
+                <h3>자주 사용하는 CSS 속성</h3>
+                <br />
+                <h4>1. 색상 및 배경</h4>
+                <br />
+                <ul>
+                    <br />
+                    <li><strong>color</strong>: 텍스트 색상을 지정합니다. <code>color: red;</code></li>
+                    <br />
+                    <li>
+                        <strong>background-color</strong>: 요소의 배경색을 지정합니다.
+                        <code>background-color: yellow;</code>
+                    </li>
+                    <br />
+                    <li>
+                        <strong>background-image</strong>: 배경 이미지를 설정합니다.
+                        <code>background-image: url('image.jpg');</code>
+                    </li>
+                    <br />
+                </ul>
+                <br />
+                <h4>2. 글꼴</h4>
+                <br />
+                <ul>
+                    <br />
+                    <li>
+                        <strong>font-family</strong>: 글꼴을 지정합니다. <code>font-family: Arial, sans-serif;</code>
+                    </li>
+                    <br />
+                    <li><strong>font-size</strong>: 글자 크기를 지정합니다. <code>font-size: 16px;</code></li>
+                    <br />
+                    <li><strong>font-weight</strong>: 글자 굵기를 지정합니다. <code>font-weight: bold;</code></li>
+                    <br />
+                </ul>
+                <br />
+                <h4>3. 레이아웃</h4>
+                <br />
+                <ul>
+                    <br />
+                    <li><strong>margin</strong>: 요소의 외부 여백을 설정합니다. <code>margin: 20px;</code></li>
+                    <br />
+                    <li><strong>padding</strong>: 요소의 내부 여백을 설정합니다. <code>padding: 10px;</code></li>
+                    <br />
+                    <li><strong>border</strong>: 요소의 테두리를 설정합니다. <code>border: 1px solid black;</code></li>
+                    <br />
+                </ul>
+                <br />
+                <h4>4. 디스플레이 및 배치</h4>
+                <br />
+                <ul>
+                    <br />
+                    <li>
+                        <strong>display</strong>: 요소의 표시 방식을 설정합니다. <code>display: block;</code>,
+                        <code>display: inline;</code>, <code>display: flex;</code>
+                    </li>
+                    <br />
+                    <li>
+                        <strong>position</strong>: 요소의 위치를 설정합니다. <code>position: relative;</code>,
+                        <code>position: absolute;</code>
+                    </li>
+                    <br />
+                    <li><strong>z-index</strong>: 요소의 쌓임 순서를 설정합니다. <code>z-index: 10;</code></li>
+                    <br />
+                </ul>
+                <br />
+                <h3>헷갈릴 수 있는 개념들</h3>
+                <br />
+                <ul>
+                    <br />
+                    <li>
+                        <strong>margin vs padding</strong>: <br />
+                        <ul>
+                            <li><strong>margin</strong>: 요소와 요소 사이의 외부 여백</li>
+                            <li><strong>padding</strong>: 요소 내부 콘텐츠와 테두리 사이의 여백</li>
+                        </ul>
+                    </li>
+                    <br />
+                    <li>
+                        <strong>inline vs block</strong>: <br />
+                        <ul>
+                            <li><strong>inline</strong>: 요소가 한 줄에 배치되며 크기 조정이 제한적입니다.</li>
+                            <li><strong>block</strong>: 요소가 전체 너비를 차지하며 줄바꿈이 일어납니다.</li>
+                        </ul>
+                    </li>
+                    <br />
+                    <li>
+                        <strong>id vs class</strong>: <br />
+                        <ul>
+                            <li><strong>id</strong>: 고유 식별자를 제공하며 한 문서에 한 번만 사용</li>
+                            <li><strong>class</strong>: 여러 요소에 적용 가능하며 재사용 가능</li>
+                        </ul>
+                    </li>
+                    <br />
+                </ul>
+                <br />
+            </article>
+        </section>
+        <nav class="nav">
+            <div class="nav-identify">
+                <span class="nav-identify__num">202200895</span>
+                <span class="nav-identify__name">정재형</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-menu__home">
+                    <a href="index.html">HOME</a>
+                </li>
+                <li class="nav-menu__html">
+                    <a href="section1.html">HTML </a>
+                </li>
+                <li class="nav-menu__css active">
+                    <a href="section2.html">CSS </a>
+                </li>
+                <li class="nav-menu__javascript">
+                    <a href="section3.html">JQUERY </a>
+                </li>
+            </ul>
+            <div class="copyright">COPYRIGHTⓒ by Deplux. ALL RIGHTS RESERVED</div>
+        </nav>
+        <script src="https://kit.fontawesome.com/9f99a6b7a1.js" crossorigin="anonymous"></script>
+    </body>
+</html>

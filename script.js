@@ -19,5 +19,5 @@ $(document).ready(function () {
         } else {
             $(".nav-menu li.active").removeClass("active").delay(400).next().addClass("active");
         }
-    }, 3000);
+    }, 2000);
 });

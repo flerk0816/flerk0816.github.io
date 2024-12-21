@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dep_Dev</title>
+        <link rel="stylesheet" href="sections.css" />
+        <link rel="preconnect" href="index.html" />
+    </head>
+    <body>
+        <section class="section">
+            <header class="header">HTML</header>
+            <article class="article">
+                <br /><br />
+                <h2>시멘틱 태그란 무엇인가?</h2>
+                <br />
+
+                <p>
+                    시멘틱(Semantic) 태그는 이름에서 알 수 있듯이 태그의 의미가 명확히 드러나는 HTML 태그를 말합니다.<br />
+                    이 태그를 사용하면 웹 페이지의 구조와 내용이 더욱 이해하기 쉽게 됩니다.<br />
+                    브라우저와 검색 엔진, 그리고 화면 읽기 장치와 같은 보조 기술도 이러한 태그를 통해 페이지의 구조를
+                    파악할 수 있습니다.
+                </p>
+                <br /><br />
+
+                <h3>시멘틱 태그의 중요성</h3>
+                <br />
+                <ul>
+                    <li>
+                        <strong>SEO(검색 엔진 최적화)</strong>: 검색 엔진은 시멘틱 태그를 통해 페이지의 콘텐츠를 더 잘
+                        이해하고 검색 순위를 매길 수 있습니다.
+                    </li>
+                    <br />
+                    <li>
+                        <strong>접근성</strong>: 화면 읽기 장치나 보조 기술이 콘텐츠를 보다 정확히 전달할 수 있습니다.
+                    </li>
+                    <br />
+                    <li>
+                        <strong>가독성 및 유지보수성</strong>: 코드를 읽는 개발자가 페이지 구조를 더 쉽게 이해할 수
+                        있습니다.
+                    </li>
+                    <br />
+                </ul>
+                <br />
+
+                <h3>자주 사용되는 시멘틱 태그</h3>
+                <br />
+                <h4>1. &lt;header&gt;</h4>
+                <br />
+                <p>페이지나 섹션의 머리말 역할을 합니다. 일반적으로 로고, 내비게이션, 제목 등이 포함됩니다.</p>
+                <pre><code>
+                &lt;header&gt;
+                  &lt;h1&gt;웹디자인 기능사&lt;/h1&gt;
+                  &lt;nav&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;&lt;a href="#home"&gt;홈&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#about"&gt;소개&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#contact"&gt;문의&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/nav&gt;
+                &lt;/header&gt;</code></pre>
+                <br />
+                <h4>2. &lt;nav&gt;</h4>
+                <br />
+                <p>내비게이션 링크를 그룹화하는 데 사용됩니다. 페이지 내 또는 외부 링크를 포함할 수 있습니다.</p>
+                <pre><code>
+                &lt;nav&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/nav&gt;</code></pre>
+                <br />
+                <h4>3. &lt;main&gt;</h4>
+                <br />
+                <p>문서의 주요 콘텐츠를 감싸는 태그입니다. 한 문서에 한 번만 사용해야 합니다.</p>
+                <pre><code>&lt;main&gt;
+                  &lt;article&gt;
+                    &lt;h2&gt;시멘틱 태그 배우기&lt;/h2&gt;
+                    &lt;p&gt;시멘틱 태그는 웹 접근성과 SEO에 매우 중요합니다.&lt;/p&gt;
+                  &lt;/article&gt;
+                &lt;/main&gt;</code></pre>
+                <br />
+                <h4>4. &lt;article&gt;</h4>
+                <br />
+                <p>독립적으로 구분 가능한 콘텐츠 블록을 나타냅니다. 블로그 글, 뉴스 기사 등에 적합합니다.</p>
+                <pre><code>&lt;article&gt;
+                  &lt;h2&gt;HTML5란?&lt;/h2&gt;
+                  &lt;p&gt;HTML5는 웹의 최신 표준으로, 시멘틱 태그가 포함되어 있습니다.&lt;/p&gt;
+                &lt;/article&gt;</code></pre>
+                <br />
+
+                <h4>5. &lt;section&gt;</h4>
+                <br />
+                <p>문서의 논리적 구분을 나타냅니다. 제목과 함께 사용하여 페이지를 더 구조화할 수 있습니다.</p>
+                <pre><code>&lt;section&gt;
+                  &lt;h2&gt;웹디자인의 중요성&lt;/h2&gt;
+                  &lt;p&gt;좋은 웹디자인은 사용자 경험을 향상시킵니다.&lt;/p&gt;
+                &lt;/section&gt;</code></pre>
+                <br />
+
+                <h4>6. &lt;aside&gt;</h4>
+                <br />
+                <p>주요 콘텐츠와는 별도로 부가적인 정보를 제공할 때 사용합니다.</p>
+                <pre><code>&lt;aside&gt;
+                  &lt;h3&gt;참고 자료&lt;/h3&gt;
+                  &lt;p&gt;HTML, CSS 및 JavaScript에 대한 더 많은 정보를 보려면 공식 문서를 확인하세요.&lt;/p&gt;
+                &lt;/aside&gt;</code></pre>
+                <br />
+
+                <h4>7. &lt;footer&gt;</h4>
+                <br />
+                <p>문서나 섹션의 바닥글 역할을 합니다. 저작권 정보, 연락처, 사이트맵 등이 포함될 수 있습니다.</p>
+                <pre><code>&lt;footer&gt;
+                  &lt;p&gt;&amp;copy; 2024 웹디자인 기능사 준비 사이트&lt;/p&gt;
+                &lt;/footer&gt;</code></pre>
+                <br />
+                <br />
+                <h3>헷갈릴 수 있는 내용들</h3>
+                <br />
+
+                <ul>
+                    <li>
+                        <strong>&lt;section&gt; vs &lt;div&gt;</strong><br />
+                        <ul>
+                            <li>
+                                &lt;section&gt;은 논리적 그룹화, &lt;div&gt;는 스타일링이나 스크립팅 목적으로
+                                사용합니다.
+                            </li>
+                            <li>&lt;section&gt;은 항상 제목(&lt;h1&gt;~&lt;h6&gt;)과 함께 사용해야 합니다.</li>
+                        </ul>
+                    </li>
+                    <br />
+                    <li>
+                        <strong>&lt;article&gt; vs &lt;section&gt;</strong><br />
+                        <ul>
+                            <li>
+                                &lt;article&gt;은 독립적으로 사용할 수 있는 콘텐츠, &lt;section&gt;은 관련된 콘텐츠를
+                                묶는 데 사용됩니다.
+                            </li>
+                        </ul>
+                    </li>
+                    <br />
+                    <li>
+                        <strong>&lt;header&gt; vs &lt;head&gt;</strong><br />
+                        <ul>
+                            <li>
+                                &lt;header&gt;는 페이지나 섹션의 머리말, &lt;head&gt;는 메타데이터를 포함하는 HTML
+                                문서의 상단에 위치합니다.
+                            </li>
+                        </ul>
+                    </li>
+                    <br />
+                    <li>
+                        <strong>한 문서에 &lt;main&gt;은 하나만 사용</strong>
+                        <br />
+                        <ul>
+                            <li>&lt;main&gt;은 문서의 주요 콘텐츠를 나타내므로 중복 사용하지 않습니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <br /><br />
+            </article>
+        </section>
+        <nav class="nav">
+            <div class="nav-identify">
+                <span class="nav-identify__num">202200895</span>
+                <span class="nav-identify__name">정재형</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-menu__home">
+                    <a href="index.html">HOME</a>
+                </li>
+                <li class="nav-menu__html active">
+                    <a href="section1.html">HTML </a>
+                </li>
+                <li class="nav-menu__css">
+                    <a href="section2.html">CSS </a>
+                </li>
+                <li class="nav-menu__javascript">
+                    <a href="section3.html">JQUERY </a>
+                </li>
+            </ul>
+            <div class="copyright">COPYRIGHTⓒ by Deplux. ALL RIGHTS RESERVED</div>
+        </nav>
+        <script src="https://kit.fontawesome.com/9f99a6b7a1.js" crossorigin="anonymous"></script>
+    </body>
+</html>
