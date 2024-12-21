@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    border: 0;
 }
 html,
 body {
@@ -122,6 +123,59 @@ body {
     color: black;
     transform: translateX(30px);
 }
+.form {
+    width: calc(100% - 70px);
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: rgb(236, 236, 236);
+    padding: 10px 30px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px gray inset;
+}
+.form-id,
+.form-password {
+    color: rgb(139, 98, 59);
+    height: 40px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid gray;
+    outline: none;
+    font-size: 28px;
+    padding: 10px 30px;
+    margin-top: 15px;
+    transition: 0.3s ease-in-out;
+}
+.form-id:focus,
+.form-password:focus,
+.form-id:hover,
+.form-password:hover {
+    border-color: rgb(139, 98, 59);
+}
+.form-id:focus::placeholder,
+.form-password:focus::placeholder,
+.form-id:hover::placeholder,
+.form-password:hover::placeholder {
+    color: rgb(139, 98, 59);
+}
+
+.form-login {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: gray;
+    color: white;
+    font-size: 24px;
+    transition: 0.3s ease-in-out;
+}
+.form-login:hover {
+    background-color: white;
+    border: 2px solid rgb(139, 98, 59);
+    color: gray;
+}
+
 .copyright {
     font-size: 14px;
     color: gray;
